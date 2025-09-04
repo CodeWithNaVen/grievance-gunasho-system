@@ -16,6 +16,19 @@
   font-family: var(--font-geist-sans);
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 @media (prefers-color-scheme: dark) {
   .page {
     --gray-rgb: 255, 255, 255;
