@@ -29,6 +29,27 @@
   font-weight: bold;
 }
 
+.nav {
+  display: flex;
+  gap: 16px;
+}
+
+.submitForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  input {
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+}
+
+.sidebar-backdrop {
+  backdrop-filter: blur(2px);
+}
+
+
 @media (prefers-color-scheme: dark) {
   .page {
     --gray-rgb: 255, 255, 255;

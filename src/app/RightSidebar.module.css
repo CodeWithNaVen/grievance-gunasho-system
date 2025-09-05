@@ -1,0 +1,57 @@
+.hamburger {
+  position: block;
+
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+
+.sidebar{
+  display: none;
+}
+
+.sidebar.show {
+  display: block;
+  transition: ease-in-out 0.3s;
+}
+
+/* Sidebar container */
+.sidebar nav {
+  display: flex;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 250px; 
+  height: auto;
+  border: 1px solid gray;
+  background-color: var(--cds-background);
+
+  flex-direction: column; /* Stack links vertically */
+  gap: 20px;
+  padding: 10px 0;
+}
+
+/* Sidebar links */
+.sidebar nav a {
+  text-decoration: none;
+  color: var(--foreground);
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.2s ease, transform 0.2s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+/* Hover effect */
+.sidebar nav a:hover {
+  color: var(--cds-interactive); /* Carbon interactive color */
+  background-color: rgba(0,0,0,0.05); /* subtle highlight */
+  transform: translateX(-3px); /* tiny shift for effect */
+}
+
+/* Optional: active link style */
+.sidebar nav a.active {
+  font-weight: 600;
+  background-color: rgba(0,0,0,0.1);
+}
